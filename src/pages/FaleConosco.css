@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .containnner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+  }
+  
+  .loc, .enddd, .redss, .conttai {
+    margin-bottom: 20px;
+  }
+  
+  .loc, .redss {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2c3e50;
+  }
+  
+  .enddd {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  /* Redes sociais com botões alinhados horizontalmente */
+  .conttai {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .conttai button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .conttai button img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .superior {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+  }
+  
+  .titulo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  .subtitulo {
+    font-size: 18px;
+    color: #34495e;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input, form textarea {
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #1abc9c;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  
+  /* Estilos para responsividade */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .containnner, .superior {
+      width: 100%;
+    }
+  
+    .conttai {
+      justify-content: center;
+    }
+  
+    form input, form textarea {
+      width: 100%;
+    }
+  }
+  
+  

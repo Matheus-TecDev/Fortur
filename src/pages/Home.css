@@ -1,0 +1,625 @@
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004d00; /* Verde escuro */
+    color: #fff; /* Cor do texto */
+    padding: 40px;
+    border-radius: 10px; /* Cantos arredondados */
+    max-width: 1800px; /* Largura máxima */
+    margin: 0px auto; /* Centraliza horizontalmente */
+  }
+  
+  .header-title {
+    font-size: 52px;
+    margin: 0 0 10px;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .date-title {
+    font-size: 26px;
+    margin: 0 0 4px;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .obs-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .currency-table {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Remove espaços entre células */
+    margin-top: 30px; /* Margem superior */
+    animation: slideDown 0.5s ease-out; /* Animação de deslizamento */
+    box-sizing: border-box; /* Para incluir padding e border no cálculo da largura */
+  }
+  
+  .currency-table th,
+  .currency-table td {
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border: 1px solid #ddd; /* Borda suave */
+    font-size: 18px; /* Tamanho da fonte */
+    width: 33.33%; /* Todas as colunas têm a mesma largura */
+  }
+  
+  .currency-table th {
+    background-color: #005700; /* Verde escuro para cabeçalho */
+    color: #ffffff; /* Texto branco no cabeçalho */
+  }
+  
+  .currency-table tr:nth-child(even) {
+    background-color: #006600; /* Verde um pouco mais claro */
+  }
+  
+  .currency-table tr:hover {
+    background-color: #33cc33; /* Verde quando passa o mouse */
+    color: #000000; /* Texto branco ao passar o mouse */
+  }
+  
+  .currency-container {
+    display: flex; /* Flexbox para a imagem e o texto lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    max-height: 42px;
+  }
+  
+  .currency-image {
+    width: 30px; /* Tamanho da imagem */
+    height: 30px; /* Tamanho da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+  }
+  
+  .currency-name {
+    font-size: 18px; /* Tamanho do texto */
+  }
+
+  .method {
+    max-width: 1800px;
+    width: 100%;
+    margin: 50px auto; /* Centraliza horizontalmente e dá espaço no topo */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+/* Título da seção */
+.method-title {
+    font-size: 48px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    color: #000; /* Define a cor preta */
+    margin-bottom: 20px;
+}
+  
+/* Parágrafo de descrição */
+.method-text {
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    color: #000; /* Define a cor preta */
+    margin-bottom: 30px;
+}
+
+.titulo-frase {
+  font-size: 32px; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
+  color: #000; /* Cor preta */
+  margin-bottom: 15px; /* Espaço inferior */
+  cursor: pointer; /* Mostra que é clicável */
+  transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.titulo-frase:hover {
+  color: #005700; /* Muda a cor ao passar o mouse */
+}
+
+  
+/* Estilo das divs de texto com imagem ao lado, agora alinhado à esquerda */
+.text-with-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha à esquerda */
+    margin-bottom: 20px;
+    cursor: pointer; /* Aplica o pointer para indicar clique */
+}
+  
+/* Texto ao lado das imagens */
+.text-with-image p {
+    font-size: 22px; /* Aumenta o tamanho da fonte */
+    color: #000; /* Define a cor preta */
+    margin-left: 15px;
+    flex: 1;
+    text-decoration: none;
+}
+  
+/* Estilo de link para o texto */
+.text-with-image:hover p {
+    text-decoration: underline; /* Sublinhar ao passar o mouse */
+    color: #000; /* Mantém a cor preta ao passar o mouse */
+}
+
+  
+  /* Imagem ao lado do texto */
+  .side-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+  }
+  
+  /* Botão de contato estilizado */
+  .contact-button {
+    background-color: #25D366; /* Verde escuro */
+    margin: 20px auto;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; /* Oval */
+    font-size: 18px;
+    font-weight: 600;
+    display: flex; /* Flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+    width: 250px; /* Largura fixa */
+    cursor: pointer; /* Cursor de mão */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    margin-top: 20px;
+  }
+  
+  /* Ícone de WhatsApp ao lado do texto do botão */
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  .contact-button:hover {
+    transform: scale(1.05); /* Animação de aumento ao passar o mouse */
+    background-color: #128C7E; /* Cor um pouco mais escura ao passar o mouse */
+  }
+
+
+/* Estilo para a div pai que cerca tudo */
+.services-container {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box-shadow aqui */
+  padding: 40px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1800px;
+  background-color: #fff; /* Cor de fundo para destacar */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Título principal e subtítulo */
+.services-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo da seção dos botões */
+.butts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 botões por linha */
+  gap: 20px; /* Espaço entre os botões */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Estilo para cada botão individual */
+.buttton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden; /* Esconde qualquer conteúdo que saia da caixa */
+}
+
+.buttton img {
+  width: 100%; /* A imagem ocupa 100% da largura do botão */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px 10px 0 0; /* Bordas arredondadas apenas na parte superior */
+}
+
+.buttton p {
+  margin-top: 10px; /* Espaço entre a imagem e o texto */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Adiciona um efeito de hover para destacar os botões */
+.buttton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+  
+.viagens {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.viagens-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.viagens-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.viagem {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.viagem-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.viagem-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.viagem-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.saiba-mais-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.saiba-mais-button:hover {
+  background-color: #0056b3;
+}
+
+.home-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.destino-imagem {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.leia-mais-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.leia-mais-link:hover {
+  text-decoration: none;
+}
+
+.servicos-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.servicos-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.servicos-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Seção de destinos */
+.destinos-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.destinos-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container para os cartões de destinos */
+.destinos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilo individual para cada cartão de destino */
+.destino-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  margin-bottom: 30px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.destino-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a imagem do destino */
+.destino-imagem {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para o nome do destino */
+.destino-nome {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 10px 0 5px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o pequeno título do destino */
+.destino-titulo {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 5px 0 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para a descrição do destino */
+.destino-descricao {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o link "Leia Mais" */
+.leia-mais-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.leia-mais-link:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+
+/* Estilos gerais da seção de dúvidas */
+.duvidas-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.duvidas-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Container para as dúvidas */
+.duvidas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo de cada dúvida (retângulo) */
+.duv {
+  width: 1000px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.duv:hover {
+  background-color: #e0e0e0; /* Cor ao passar o mouse */
+}
+
+.duv-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.duv p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilo da seta */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.arrow.right {
+  transform: rotate(-90deg); /* Seta apontando para a esquerda (inicial) */
+}
+
+.arrow.down {
+  transform: rotate(0deg); /* Seta apontando para baixo (ao clicar) */
+}
+
+/* Estilo do texto expandido */
+.duv-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+  
+  /* Animação para a tabela aparecer de cima para baixo */
+  @keyframes slideDown {
+    from {
+      opacity: 0; /* Começa invisível */
+      transform: translateY(-20px); /* Começa um pouco acima */
+    }
+    to {
+      opacity: 1; /* Torna-se visível */
+      transform: translateY(0); /* Volta à posição original */
+    }
+  }
+
+  @media (max-width: 2049px){
+    .box-container, .method{
+      max-width: 1600px;
+    }
+  }
+
+  @media (max-width: 1847px){
+    .box-container, .method{
+      max-width: 1400px;
+    }
+  }
+
+  @media (max-width: 1700px){
+    .box-container, .method{
+      max-width: 1300px;
+    }
+  }
+  
+  @media (max-width: 1555px){
+    .box-container, .method{
+      max-width: 1150px;
+
+    }
+  }
+
+  @media (max-width: 1450px){
+    .box-container, .method{
+      max-width: 1040px;
+
+    }
+  }
+
+  @media (max-width: 1230px){
+    .box-container, .method{
+      max-width: 980px;
+      
+    }
+  }
+
+  @media (max-width: 1181px){
+    .box-container, .method{
+      max-width: 860px;
+    }
+    .header-title{
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 1075px){
+    .box-container, .method{
+      max-width: 760px;
+      
+    }
+  }
+
+  @media (max-width: 940px){
+    .box-container, .method{
+      max-width: 660px;
+      
+    }
+  }
+
+  @media (max-width: 840px){
+    .box-container, .method{
+      max-width: 620px;
+      padding: 28px;
+    }
+
+    .date-title{
+      font-size: 18px;
+      margin : 5px 5px;
+    }
+
+    .currency-table{
+      margin-top: 8px;
+    }
+  }
