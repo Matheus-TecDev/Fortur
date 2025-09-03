@@ -1,6 +1,6 @@
-🧩 Site Fortur – Frontend
+## 🗃️ Site Fortur – Frontend
 
-📖 Descrição
+## 📖 Descrição
 
 O Site Fortur – Frontend é um projeto desenvolvido em React (Create React App) com o objetivo de ser a versão institucional da Fortur.
 
@@ -11,16 +11,23 @@ O projeto será futuramente atualizado para Vite, com melhorias de performance e
 
 ---
 
-🎮 Preview
+## 🎮 Preview
 
 (Preview ainda não configurado por estar incompleto)
 
 👉 Deploy na Vercel
  (em breve)
  
- ---
+---
+ 
+ ## 🔗 Repositórios Relacionados
 
-⚡ Funcionalidades (atuais)
+- [Frontend (este repositório)](https://github.com/Matheus-TecDev/Fortur.git)
+- [Backend (API)](https://github.com/Matheus-TecDev/Fortur-Backend.git)
+
+---
+
+## ⚡ Funcionalidades (atuais)
 
 Estrutura inicial em Create React App.
 
@@ -30,7 +37,7 @@ Importação de assets básicos (favicons e imagens).
 
 ---
 
-📚 Conceitos praticados
+## 📚 Conceitos praticados
 
 Configuração inicial de projeto em CRA.
 
@@ -40,13 +47,13 @@ Organização inicial de assets públicos.
 
 ---
 
-🛠️ Tecnologias
+## 🛠️ Tecnologias
 
 React (Create React App)
 
 ---
 
-🚧 Status Atual
+## 🚧 Status Atual
 
 Projeto incompleto e instável.
 
@@ -58,7 +65,7 @@ Sem responsividade.
 
 ---
 
-📌 Roadmap (melhorias futuras)
+## 📌 Roadmaps
 
 Finalizar páginas institucionais.
 
@@ -78,4 +85,5 @@ Publicar versão estável no Vercel.
 
 - [Matheus Freire](https://github.com/Matheus-TecDev)  
 - [LinkedIn](https://www.linkedin.com/in/matheus-freire-martins-da-costa-318622376/)  
-📫 Contato: matheus.tecnodev@gmail.com
+
+📫 Contato: [matheus.tecnodev@gmail.com](mailto:matheus.tecnodev@gmail.com)
